@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>FINAL TASK</title>
+  </head>
+  <body style="margin:0">
+    <script src="three.min.js"></script>
+    <script src="TrackballControls.js"></script>
+    <script src="http://threejs.org/examples/js/math/Lut.js"></script>
+    <script src="http://naohisas.github.io/KVS.js/Build/KVS.min.js"></script>
+    <script src="http://naohisas.github.io/KVS.js/Build/KVS2THREE.min.js"></script>
+    <script src="http://naohisas.github.io/KVS.js/Source/KVSLobsterData.js"></script>
+    <script src="Bounds.js"></script>
+    <script src="Isosurfaces.js"></script>
+    <script src="w09_main_ex02.js"></script>
+
+  
+ 
+    <div id="display" style="width: 80%; float: left;"></div>
+    <div id="controller" style="width:20%; float:left;">
+
+  <h1>Switch Lobster color</h1>
+    <p>When you push each button, Lobster's color change!</p>
+    <p>Lobster after changed color display under the original place.</p>
+      
+      <label id="label" style="font-family:Arial;"></label>
+      <button id="change-isovalue-button1" style="font-family=Arial;">
+	PURPLE</button>
+      <button id="change-isovalue-button2" style="font-family=Arial;">
+	ORANGE</button>
+      <button id="change-isovalue-button3" style="font-family=Arial;">
+	PINK</button>
+      
+    </div>
+
+    <script>
+      
+      var isovalue = 126;
+      main(isovalue);
+
+    </script>
+
+    
+    <script>
+      var button = document.getElementById("change-isovalue-button1");
+      button.addEventListener("click",function(){
+
+      var isovalue = 0;
+      main(isovalue);
+
+      });
+    </script>
+
+    <script>
+      var button = document.getElementById("change-isovalue-button2");
+      button.addEventListener("click",function(){
+
+      var isovalue = 189;
+      main(isovalue);
+
+      });
+    </script>
+
+    <script>
+      var button = document.getElementById("change-isovalue-button3");
+      button.addEventListener("click",function(){
+
+      var isovalue = 50;
+      main(isovalue);
+
+      });
+    </script>
+    
+  </body>
+</html>
